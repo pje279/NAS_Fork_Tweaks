@@ -1,0 +1,13 @@
+{
+	"name": "NAS_Fork_Tweaks",
+	"version": "0.1.0",
+	"factorio_version": "2.0",
+	"title": "NAS Fork Tweaks",
+	"author": "TheEckelmonster",
+	"description": "Personal tweaks to NAS_Fork for Space Age. Changes the recipe to require: artillery shell, quantum processor, radar, atomic bomb. Intended for use post-Aquilo. Requires all science packs except Promethium.",
+	"dependencies": [
+		"base >= 2.0",
+		"space-age >= 2.0",
+		"NAS_Fork >= 0.1.0"
+	]
+}
