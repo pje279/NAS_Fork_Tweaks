@@ -1,3 +1,4 @@
+-- Set the recipe
 data.raw.recipe["artillery-shell-nuclear"].ingredients = {
 	{type = "item", name = "artillery-shell", amount = 1},
 	{type = "item", name = "quantum-processor", amount = 1},
@@ -5,8 +6,18 @@ data.raw.recipe["artillery-shell-nuclear"].ingredients = {
 	{type = "item", name = "atomic-bomb", amount = 1},
 }
 
-data.raw.recipe["artillery-shell-nuclear"].energy_required = 120
+-- default crafting time
+local crafting_time = 120
 
+-- If the setting has a valid value, the use that for the crafting time
+if (settings.startup["nas-tweaks-crafting-time"] and settings.startup["nas-tweaks-crafting-time"].value > 0) then
+	crafting_time = settings.startup["nas-tweaks-crafting-time"].value
+end
+
+-- Set the crafting time
+data.raw.recipe["artillery-shell-nuclear"].energy_required = crafting_time
+
+-- Set the research requirements
 data.raw.technology["artillery-shell-nuclear"].unit = {
 	ingredients =	{
 		{"automation-science-pack", 1},
@@ -25,6 +36,7 @@ data.raw.technology["artillery-shell-nuclear"].unit = {
 	count = 10000 
 }
 
+-- Set the research prerequisites
 data.raw.technology["artillery-shell-nuclear"].prerequisites = {
 	"atomic-bomb", 
 	"artillery", 
