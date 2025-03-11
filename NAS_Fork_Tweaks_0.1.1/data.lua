@@ -5,6 +5,8 @@ data.raw.recipe["artillery-shell-nuclear"].ingredients = {
 	{type = "item", name = "atomic-bomb", amount = 1},
 }
 
+data.raw.recipe["artillery-shell-nuclear"].energy_required = 120
+
 data.raw.technology["artillery-shell-nuclear"].unit = {
 	ingredients =	{
 		{"automation-science-pack", 1},
