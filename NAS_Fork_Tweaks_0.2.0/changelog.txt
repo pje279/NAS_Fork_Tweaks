@@ -3,6 +3,7 @@ Version: 0.2.0
 Date: 11. 03. 2025
   Minor Features:
     - Added setting for nuclear artillery shell crafting time; defaults to 120 (minummum of 1)
+    - Made nuclear artillery shells too heavy to launch via a rocket by default (can be disabled)
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.2
 Date: 11. 03. 2025

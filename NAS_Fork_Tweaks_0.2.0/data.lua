@@ -42,3 +42,8 @@ data.raw.technology["artillery-shell-nuclear"].prerequisites = {
 	"artillery", 
 	"quantum-processor"
 }
+
+-- Check if the nuclear artillery shell should be too heavy for rocket launches
+if (settings.startup["nas-tweaks-too-heavy-for-rocket"] and settings.startup["nas-tweaks-too-heavy-for-rocket"].value) then
+	data.raw.ammo["artillery-shell-nuclear"].weight = 1.5 * tons
+end
